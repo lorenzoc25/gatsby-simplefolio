@@ -21,7 +21,6 @@ const Projects = () => {
       setIsDesktop(false);
     }
   }, []);
-
   return (
     <section id="projects">
       <Container>
@@ -29,7 +28,14 @@ const Projects = () => {
           <Title title="Projects" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
-
+            let urlMsg;
+            if (title === 'Codely.us') {
+              urlMsg = 'Devpost Page';
+            } else if (title === 'Skreech!') {
+              urlMsg = 'Play Live';
+            } else {
+              urlMsg = 'GitHub Repo';
+            }
             return (
               <Row key={id}>
                 <Col lg={4} sm={12}>
@@ -55,17 +61,17 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        {urlMsg}
                       </a>
 
-                      {repo && (
+                      {repo && urlMsg !== 'GitHub Repo' && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Source Code
+                          GitHub Repo
                         </a>
                       )}
                     </div>
