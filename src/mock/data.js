@@ -11,17 +11,16 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Lorenzo Cao',
-  // eslint-disable-next-line prettier/prettier
-  subtitle: 'I\'m a Software Engineer',
+  subtitle: "I'm a Software Engineer",
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: "Hi! I'm a rising sophomore studying Computer Science at UCLA",
+  paragraphOne: "Hi! I'm an undergraduate studying Computer Science at UCLA",
   paragraphTwo:
-    "I'm Passionate about Software Engineering and Web Development in general(with working/project experiences) but also willing to explore all the potentials in the technology field such as AI.",
+    "I'm passionate about Software Engineering and Web Development in general(with working/project experiences) but also willing to explore all the potentials in the technology field such as AI.",
   paragraphThree: 'To learn more, please check my resume below!',
   resume: 'https://drive.google.com/file/d/1IKNJTUGOna-rC61yWELg5W-6uMIGKIE-/view?usp=sharing', // if no resume, the button will not show up
 };
@@ -53,6 +52,14 @@ export const projectsData = [
     info: 'A Serverless reverse proxy and load balancing library built for Cloudflare Workers.',
     info2: 'I contributed to this as a Summer of Code Developer',
     url: 'https://github.com/booster-labs/rocket-booster',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'btracker.jpg',
+    title: 'Btracker',
+    info: 'A sever-side rendered fullstack application that can help you to track all your packages.',
+    url: 'https://github.com/lorenzoc25/btracker-frontend',
     repo: '', // if no repo, the button will not show up
   },
 ];
