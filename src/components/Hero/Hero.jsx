@@ -44,7 +44,7 @@ const Header = () => {
               className="cta-btn cta-btn--hero"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://sable-sturgeon-607.notion.site/Computer-Science-9237617609494ae3920efa825ffa2938"
+              href="https://lorenzoc25.notion.site/Computer-Science-9237617609494ae3920efa825ffa2938"
             >
               Programming Notes
             </a>
